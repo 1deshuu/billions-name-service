@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="tr">
       <body className="flex flex-col min-h-screen bg-[url('/background.png')] bg-cover bg-center">
         <header className="fixed top-0 left-0 right-0 z-50 grid grid-cols-3 items-center px-4 py-2 md:py-3 bg-white bg-opacity-80 backdrop-blur-sm border-b border-gray-200">
           {/* Sol Logo */}
@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className="justify-self-end w-8 md:w-20"></div>
         </header>
 
-        <main className="flex-1 pt-20 md:pt-24">
+        <main className="flex-1 pt-12 md:pt-16">
           {children}
         </main>
       
