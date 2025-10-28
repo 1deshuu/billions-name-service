@@ -18,38 +18,38 @@ export default function Page() {
   const intentUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(
     TWEET_URL
   )}&text=${encodeURIComponent(
-    `Just secured ${domain}.common on Common Name Service.
+    `Just secured ${domain}.billions on Billions Name Service.
 
-Get yours now : common-name-service.vercel.app
+Get yours now : billions-name-service.vercel.app
 Who wouldn't want to have a unique identity?`
   )}`;
 
   return (
-    <div className="flex flex-col items-center justify-center h-full px-4 py-8">
-      <div className="border border-blue-100 rounded-lg bg-gray-900 p-4 md:p-6 w-full max-w-sm md:max-w-md shadow-lg text-white">
+    <div className="flex flex-col items-center justify-center h-full px-4 py-16">
+      <div className="border border-b rounded-lg bg-gray-900 p-4 md:p-6 w-full max-w-sm md:max-w-md shadow-lg text-white">
         {!submitted ? (
           <> 
             {/* Karakter resmi */}
             <img src="/placeholder.png" alt="character" className="w-full rounded mb-2" />
 
             <h2 className="text-2xl font-bold mb-2 text-center text-blue-300">
-              Get Your Common Domain Now
+              Get Your Billions Domain Now
             </h2>
             <p className="text-sm text-center text-gray-200 mb-5">
-              This is a fan made Common Name Service that allows you to generate a visual .common domain card.
+              This is a fan made Billions Name Service that allows you to generate a visual .billions domain card.
             </p>
 
             <label className="block text-sm font-bold text-gray-200 mb-1">Your X Username</label>
             <input
               type="text"
-              placeholder="e.g. @lamumu_lover"
+              placeholder="e.g. @billioners"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-full mb-3 p-2 rounded bg-black border border-blue-300 text-white"
+              className="w-full mb-4 p-2 rounded bg-black border border-blue-300 text-white"
             />
 
-            <label className="block text-sm font-bold text-gray-200 mb-1">Your Common Name</label>
-            <div className="flex mb-4">
+            <label className="block text-sm font-bold text-gray-200 mb-1">Your Billions Name</label>
+            <div className="flex mb-5">
               <input
                 type="text"
                 placeholder="yourname"
@@ -58,7 +58,7 @@ Who wouldn't want to have a unique identity?`
                 className="w-full p-2 rounded-l bg-black border border-blue-300 text-white"
               />
               <span className="bg-blue-400 text-black font-bold px-4 flex items-center rounded-r">
-                .common
+                .billions
               </span>
             </div>
 
@@ -82,7 +82,7 @@ Who wouldn't want to have a unique identity?`
             </h2>
             <img src="/success.png" alt="Success" className="w-full rounded mb-4" />
             <p className="text-center mb-6">
-              Your <span className="font-semibold text-blue-400">{domain || 'yourname'}.common</span> domain is now yours forever.
+              Your <span className="font-semibold text-blue-400">{domain || 'yourname'}.billions</span> domain is now yours forever.
               <br />
               You have a unique name secured on the blockchain.
             </p>

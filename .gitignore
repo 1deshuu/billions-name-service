@@ -1,1 +1,8 @@
-node_modules
+# Bağımlılıklar
+/node_modules
+
+# Next.js build çıktıları
+/.next/
+
+# Yerel ortam değişkenleri
+.env.local
