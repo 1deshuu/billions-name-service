@@ -1,7 +1,7 @@
 'use client';
 import { useState } from 'react';
 
-const TWEET_URL = 'https://twitter.com/deshuu_/status/1970179411375780189';
+const TWEET_URL = 'https://twitter.com/deshuu_/status/1984338673190543632';
 
 export default function Page() {
   const [username, setUsername] = useState('');
@@ -20,7 +20,7 @@ export default function Page() {
   )}&text=${encodeURIComponent(
     `Just secured ${domain}.billions on Billions Name Service.
 
-Get yours now : billions-name-service.vercel.app
+Get yours now : https://billions-name-service.vercel.app/
 Who wouldn't want to have a unique identity?`
   )}`;
 
